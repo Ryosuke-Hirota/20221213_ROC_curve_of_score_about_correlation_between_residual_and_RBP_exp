@@ -18,7 +18,10 @@ phy.list <-phy.list[,c(5,4,1)]
 # these lists are located at "\\fsw-q02\okamura-lab\Files_related_to_M1_Projects\Hirota\CCLE_plot\20221213_calculate_score_about_relative_rank_of_correlation_between_residual_and_RBP_expression"
 score.list <-list.files(path="C:/Rdata/20221213_calculate_score_about_relative_rank_of_correlation_between_residual_and_RBP_expression",pattern = "table_of_score")
 
-# activate package for editting strings
+# change order of score list
+score.list <-score.list[c(1,10,2:9,11:19)]
+
+# activate package for editing strings
 library(stringr)
 
 # set cutoff value
